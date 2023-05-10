@@ -1,0 +1,163 @@
+@import "variables.scss";
+@import "nullstyle.scss";
+
+body {
+    background-color: $bg-color;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 61px;
+}
+
+.container {
+    max-width: 1275px;
+    padding: 0 15px;
+    width: 100%;
+    margin: auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content {
+    &-between {
+        justify-content: space-between;
+    }
+    &-center {
+        justify-content: center;
+    }
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.tpl-button {
+    display: inline-block;
+    width: 210px;
+    border: 1px solid $text-color;
+    padding: 16px 25px;
+    font-weight: 600;
+
+    &:hover {
+        border: 1px solid  $hover-color;
+    }
+}
+
+@mixin text-size($fweight, $fsize, $lheight) {
+    font-weight: $fweight;
+    font-size: $fsize;
+    line-height: $lheight;
+}
+
+.nav {
+    ul {
+        li {
+            margin: 35px 17.5px;
+        }
+    }
+}
+
+.phone {
+    svg {
+        margin-right: 17.5px;
+    }
+}
+
+.banner {
+    &-area {
+        height: 100vh;
+        width: 100%;
+
+        @include text-size(600, 18px, 22px);
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: inherit;
+        }
+    }
+
+    &-text {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        top: 35%;
+        text-align: center;
+    }
+
+    &-buttons {
+        a {
+            @extend .tpl-button;
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+.advantages {
+    &-area {
+        position: relative;
+        justify-content: end;
+        padding-top: 100px;
+
+        img {
+            position: absolute;
+            right: 650px;
+            top: 100px;
+            width: 1100px;
+            height: 500px;
+        }
+    }
+
+    &-text {
+        width: 0%;
+
+        h2 {
+            @include text-size(600, 40px, 48px);
+
+            margin-bottom: 40px;
+        }
+
+        &-blocks {
+            display: grid;
+            column-gap: 20px;
+            row-gap: 20px;
+
+            grid-template-columns: 300px 300px;
+        }
+
+        &-block {
+            height: 180px;
+            padding: 20px;
+            display: inline-grid;
+            background-color: #151614;
+
+            &-header {
+                span {
+                    @include text-size(400, 30px, 36px);
+                    margin-right: 10px;
+
+                    color: #069DC2;
+                }
+
+                h3 {
+                    @include text-size(600, 23px, 30px);
+                }
+            }
+
+            p {
+                @include text-size(400, 16px, 22px);
+            }
+        }
+    }
+}
