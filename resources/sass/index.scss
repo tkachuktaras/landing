@@ -1,0 +1,145 @@
+@import "variables.scss";
+
+.banner {
+    &-area {
+        height: 100vh;
+        width: 100%;
+
+        @include text-size(600, 18px, 22px);
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: inherit;
+        }
+    }
+
+    &-text {
+        position: absolute;
+        flex-direction: column;
+        width: 100%;
+        top: 35%;
+        text-align: center;
+    }
+
+    &-buttons {
+        a {
+            @extend .tpl-button;
+            &:first-child {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+.advantages {
+    &-area {
+        position: relative;
+        justify-content: end;
+        padding-top: 100px;
+        margin-bottom: 80px;
+
+        img {
+            position: absolute;
+            right: 650px;
+            top: 100px;
+            width: 1100px;
+            height: 500px;
+        }
+    }
+
+    &-text {
+        width: 0%!important;
+
+        h2 {
+            @include text-size(600, 40px, 48px);
+
+            margin-bottom: 40px;
+        }
+
+        &-blocks {
+            display: grid;
+            column-gap: 20px;
+            row-gap: 20px;
+
+            grid-template-columns: 300px 300px;
+        }
+
+        &-block {
+            height: 180px;
+            padding: 20px;
+            display: inline-grid;
+            background-color: #151614;
+
+            &-header {
+                span {
+                    @include text-size(400, 30px, 36px);
+                    margin-right: 10px;
+
+                    color: #069DC2;
+                }
+
+                h3 {
+                    @include text-size(600, 23px, 30px);
+                }
+            }
+
+            p {
+                @include text-size(400, 16px, 22px);
+            }
+        }
+    }
+}
+
+.services {
+    &-header {
+        margin-bottom: 25px;
+
+        &-text {
+            @include text-size(600, 40px, 48px);
+        }
+
+        &-button {
+            @extend .tpl-button;
+
+        }
+    }
+
+    &-content {
+        display: grid;
+        grid-template-columns: 1fr 0.75fr;
+
+        &-text {
+            @include text-size(400, 18px, 24px);
+        }
+
+        &-buttons {
+            a:first-child {
+                margin-right: 22px;
+            }
+        }
+    }
+
+    &-card {
+        width: 400px;
+        margin-right: 20px;
+
+        &-image {
+            margin-bottom: 15px;
+        }
+
+        &-header {
+            @include text-size(600, 25px, 30px);
+            margin-bottom: 15px;
+        }
+
+        &-text {
+            @include text-size(400, 18px, 23px);
+            color: #707070;
+        }
+
+        &:last-child {
+            margin-right: 0px;
+        }
+    }
+}

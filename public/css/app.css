@@ -1,3 +1,15 @@
+.tpl-button {
+  display: inline-block;
+  width: 210px;
+  border: 1px solid #FFFFFF;
+  padding: 16px 25px;
+  font-weight: 600;
+}
+
+.tpl-button:hover {
+  border: 1px solid #069DC2;
+}
+
 *,
 *::before,
 *::after {
@@ -118,22 +130,12 @@ h1 {
   justify-content: center;
 }
 
+.justify-content-end {
+  justify-content: end;
+}
+
 .align-items-center {
   align-items: center;
-}
-
-.tpl-button,
-.banner-buttons a {
-  display: inline-block;
-  width: 210px;
-  border: 1px solid #FFFFFF;
-  padding: 16px 25px;
-  font-weight: 600;
-}
-
-.tpl-button:hover,
-.banner-buttons a:hover {
-  border: 1px solid #069DC2;
 }
 
 .nav ul li {
@@ -142,92 +144,5 @@ h1 {
 
 .phone svg {
   margin-right: 17.5px;
-}
-
-.banner-area {
-  height: 100vh;
-  width: 100%;
-  font-weight: 600;
-  font-size: 18px;
-  line-height: 22px;
-}
-
-.banner-area img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  width: 100%;
-  height: inherit;
-}
-
-.banner-text {
-  position: absolute;
-  flex-direction: column;
-  width: 100%;
-  top: 35%;
-  text-align: center;
-}
-
-.banner-buttons a:first-child {
-  margin-right: 30px;
-}
-
-.advantages-area {
-  position: relative;
-  justify-content: end;
-  padding-top: 100px;
-}
-
-.advantages-area img {
-  position: absolute;
-  right: 650px;
-  top: 100px;
-  width: 1100px;
-  height: 500px;
-}
-
-.advantages-text {
-  width: 0%;
-}
-
-.advantages-text h2 {
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
-  margin-bottom: 40px;
-}
-
-.advantages-text-blocks {
-  display: grid;
-  -moz-column-gap: 20px;
-       column-gap: 20px;
-  row-gap: 20px;
-  grid-template-columns: 300px 300px;
-}
-
-.advantages-text-block {
-  height: 180px;
-  padding: 20px;
-  display: inline-grid;
-  background-color: #151614;
-}
-
-.advantages-text-block-header span {
-  font-weight: 400;
-  font-size: 30px;
-  line-height: 36px;
-  margin-right: 10px;
-  color: #069DC2;
-}
-
-.advantages-text-block-header h3 {
-  font-weight: 600;
-  font-size: 23px;
-  line-height: 30px;
-}
-
-.advantages-text-block p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
 }
 
