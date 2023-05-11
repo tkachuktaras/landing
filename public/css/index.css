@@ -1,4 +1,5 @@
 .tpl-button,
+.contact-form-button,
 .services-header-button,
 .banner-buttons a {
   display: inline-block;
@@ -9,6 +10,7 @@
 }
 
 .tpl-button:hover,
+.contact-form-button:hover,
 .services-header-button:hover,
 .banner-buttons a:hover {
   border: 1px solid #069DC2;
@@ -102,6 +104,10 @@
   line-height: 22px;
 }
 
+.services-area {
+  margin-bottom: 100px;
+}
+
 .services-header {
   margin-bottom: 25px;
 }
@@ -152,5 +158,49 @@
 
 .services-card:last-child {
   margin-right: 0px;
+}
+
+.contact-area #map {
+  position: absolute;
+  width: 100%;
+  height: 550px;
+}
+
+.contact-form {
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  right: 0;
+  width: 505px;
+  padding: 50px 40px;
+  background-color: #151614;
+}
+
+.contact-form-header {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+
+.contact-form-input {
+  width: 100%;
+  padding: 20px 10px 20px 0px;
+  margin-bottom: 35px;
+  background-color: #151614;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.contact-form-container {
+  display: grid;
+  grid-template-columns: 20% 70%;
+  -moz-column-gap: 10%;
+       column-gap: 10%;
+}
+
+.contact-form-button {
+  width: 100%;
+  color: #000;
+  background-color: #fff;
 }
 

@@ -73,6 +73,11 @@ select {
     font: inherit;
 }
 
+input {
+    border: none;
+    outline: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
     * {
         animation-duration: 0.01ms !important;

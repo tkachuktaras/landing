@@ -39,8 +39,13 @@ h1 {
     }
 }
 
-.align-items-center {
-    align-items: center;
+.align-items {
+    &-center {
+        align-items: center;
+    }
+    &-end {
+        align-items: end;
+    }
 }
 
 .nav {
