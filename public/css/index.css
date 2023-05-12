@@ -7,13 +7,37 @@
   border: 1px solid #FFFFFF;
   padding: 16px 25px;
   font-weight: 600;
+  transition: all 0.4s ease-out;
 }
 
 .tpl-button:hover,
 .contact-form-button:hover,
 .services-header-button:hover,
 .banner-buttons a:hover {
+  background-color: #069DC2;
   border: 1px solid #069DC2;
+  color: #FFFFFF;
+}
+
+.tpl-input,
+.contact-form-input {
+  width: 100%;
+  padding: 20px 10px 20px 0px;
+  border-bottom: 1px solid #DFDFDF;
+}
+
+.tpl-input:focus + .line,
+.contact-form-input:focus + .line {
+  width: 100%;
+}
+
+.form-group .line {
+  position: relative;
+  bottom: 1px;
+  width: 0;
+  height: 1px;
+  background-color: #069DC2;
+  transition: all 0.4s ease-out;
 }
 
 .banner-area {
@@ -184,11 +208,7 @@
 }
 
 .contact-form-input {
-  width: 100%;
-  padding: 20px 10px 20px 0px;
-  margin-bottom: 35px;
   background-color: #151614;
-  border-bottom: 1px solid #DFDFDF;
 }
 
 .contact-form-container {

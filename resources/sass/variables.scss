@@ -10,9 +10,33 @@ $box-color: #151614;
     padding: 16px 25px;
     font-weight: 600;
 
+    transition: all 0.4s ease-out;
+
     &:hover {
+        background-color: $hover-color;
         border: 1px solid  $hover-color;
+        color: $text-color;
     }
+}
+
+.tpl-input {
+    width: 100%;
+    padding: 20px 10px 20px 0px;
+
+    border-bottom: 1px solid #DFDFDF;
+
+    &:focus+.line {
+        width: 100%;
+    }
+}
+
+.form-group .line {
+    position: relative;
+    bottom: 1px;
+    width: 0;
+    height: 1px;
+    background-color: $hover-color;
+    transition: all 0.4s ease-out;
 }
 
 @mixin text-size($fweight, $fsize, $lheight) {

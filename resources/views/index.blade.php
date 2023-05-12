@@ -163,13 +163,34 @@
         <div class="container d-flex justify-content-end">
             <div class="contact-form">
                 <h3 class="contact-form-header">Зв’язатись з нами</h3>
-                <input class="contact-form-input" placeholder="Ім'я">
-                <input class="contact-form-input" placeholder="Пошта">
-                <div class="contact-form-container">
-                    <input class="contact-form-input" placeholder="+380">
-                    <input class="contact-form-input" placeholder="00000000">
+                <div class="form-group">
+                    <input class="contact-form-input" placeholder="Ім'я">
+                    <div class="line"></div>
                 </div>
-                <input class="contact-form-input" placeholder="Ваша проблема">
+
+                <div class="form-group">
+                    <input class="contact-form-input" placeholder="Пошта">
+                    <div class="line"></div>
+                </div>
+
+
+
+                <div class="contact-form-container">
+                    <div class="form-group">
+                        <input class="contact-form-input" placeholder="+380">
+                        <div class="line"></div>
+                    </div>
+                    <div class="form-group">
+                        <input class="contact-form-input" placeholder="00000000">
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input class="contact-form-input" placeholder="Ваша проблема">
+                    <div class="line"></div>
+                </div>
+
                 <button class="contact-form-button" type="submit">Зателефонуйте мені</button>
             </div>
         </div>
