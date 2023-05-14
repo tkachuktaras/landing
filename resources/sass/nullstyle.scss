@@ -16,8 +16,16 @@ a {
     text-decoration: none;
     transition: all 0.2s ease-out;
 
-    &:hover {
+    &:hover, &:hover+path {
         color: $hover-color;
+    }
+
+    & svg path {
+        transition: all 0.2s ease-out;
+    }
+
+    &:hover svg path {
+        fill: $hover-color;
     }
 }
 

@@ -267,6 +267,25 @@
         </div>
     </section>
 
+    <div id="subscriptionModal" class="modal">
+
+        <div class="modal-content">
+            <a onclick="closeModal()" class="close">&times;</a>
+            <h1 class="modal-header">
+                Підпишіться та отримайте знижку в <br>10% на ремонт автомобіля
+            </h1>
+            <div class="form-group">
+                <input class="modal-input" placeholder="Ім'я">
+                <div class="line"></div>
+            </div>
+            <div class="form-group">
+                <input class="modal-input" placeholder="Пошта">
+                <div class="line"></div>
+            </div>
+            <button class="modal-submit">Підписатися</button>
+        </div>
+
+    </div>
 
 @endsection
 
@@ -281,6 +300,20 @@
 
 @push('js')
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        setTimeout(function() {
+            const element = document.querySelectorAll('.modal');
+            element[0].classList.add('active');
+            document.getElementsByTagName("body")[0].style = "overflow-y: hidden;";
+        }, 5000);
+
+        function closeModal() {
+            const element = document.querySelectorAll('.modal');
+            element[0].classList.remove('active');
+            document.getElementsByTagName("body")[0].style = "overflow-y: auto;";
+        }
+    </script>
 
     <script type="module">
         import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
