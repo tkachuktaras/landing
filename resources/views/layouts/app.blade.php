@@ -30,11 +30,11 @@
 
             <nav class="header-nav">
                 <ul class="header-nav-menu d-flex">
-                    <li><a href="" alt="">Головна</a></li>
+                    <li><a href="{{ route('index') }}" alt="">Головна</a></li>
                     <li><a href="" alt="">Про нас</a></li>
                     <li><a href="" alt="">Сервіси</a></li>
                     <li><a href="" alt="">Відгуки</a></li>
-                    <li><a href="" alt="">Контакти</a></li>
+                    <li><a href="{{ route('contacts') }}" alt="">Контакти</a></li>
                 </ul>
             </nav>
 
@@ -106,6 +106,7 @@
         </div>
     </footer>
 
+    <script src="{{ asset('js/app.js') }}"></script>
     @stack('js')
 </body>
 </html>

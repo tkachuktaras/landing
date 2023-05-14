@@ -13,4 +13,5 @@ const mix = require('laravel-mix');
 
 mix.sass('resources/sass/app.scss', 'public/css')
     .sass('resources/sass/index.scss', 'public/css')
+    .sass('resources/sass/contacts.scss', 'public/css')
     .version();

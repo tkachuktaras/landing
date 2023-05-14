@@ -1,0 +1,70 @@
+@import "variables.scss";
+
+.address {
+    &-area {
+        padding-top: 140px!important;
+        flex-direction: column;
+    }
+
+    &-header {
+        @include text-size(600, 40px, 48px);
+        margin-bottom: 70px;
+    }
+
+    &-cards {
+        width: 100%;
+        position: relative;
+
+        &-svgs {
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        svg {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+
+    &-card {
+        flex-direction: row;
+        margin-bottom: 13px;
+
+        &:nth-child(even) {
+            justify-content: end;
+        }
+
+        &-image {
+            width: 190px;
+            height: 145px;
+
+            margin-right: 20px;
+        }
+
+        &-svgs {
+            &-rect {
+                transition: 1s all ease;
+            }
+
+            &-rect.active{
+                fill: #069DC2;
+                fill-opacity: 1;
+            }
+        }
+
+        &-content {
+            flex-direction: column;
+
+            &-header {
+                @include text-size(600, 40px, 30px);
+                margin-bottom: 15px;
+            }
+
+            &-text {
+                @include text-size(400, 18px, 125%);
+                color: #707070;
+            }
+        }
+    }
+}

@@ -1,5 +1,4 @@
 .tpl-button,
-.contact-form-button,
 .services-header-button,
 .banner-buttons a {
   display: inline-block;
@@ -11,7 +10,6 @@
 }
 
 .tpl-button:hover,
-.contact-form-button:hover,
 .services-header-button:hover,
 .banner-buttons a:hover {
   background-color: #069DC2;
@@ -19,15 +17,13 @@
   color: #FFFFFF;
 }
 
-.tpl-input,
-.contact-form-input {
+.tpl-input {
   width: 100%;
   padding: 20px 10px 20px 0px;
   border-bottom: 1px solid #DFDFDF;
 }
 
-.tpl-input:focus + .line,
-.contact-form-input:focus + .line {
+.tpl-input:focus + .line {
   width: 100%;
 }
 
@@ -40,26 +36,56 @@
   transition: all 0.4s ease-out;
 }
 
+:root {
+  --swiper-navigation-top-offset: 97.7%;
+  --swiper-navigation-sides-offset: 43%;
+  --swiper-pagination-bullet-size: 15px;
+  --swiper-pagination-color: #FFF;
+  --swiper-pagination-bullet-inactive-color: #FFF;
+  --swiper-pagination-bullet-horizontal-gap: 10px;
+}
+
 .banner-area {
   height: 100vh;
+  max-width: 100vw;
   width: 100%;
   font-weight: 600;
   font-size: 18px;
   line-height: 22px;
 }
 
-.banner-area img {
-  -o-object-fit: cover;
-     object-fit: cover;
+.banner-area .swiper-wrapper {
   width: 100%;
-  height: inherit;
+  max-width: 100vw;
+}
+
+.banner-area .swiper-slide {
+  background-size: cover;
+  background-position: 50%;
+}
+
+.banner-area .swiper-paggination {
+  margin: 0 auto;
+}
+
+.banner-area .swiper-paggination-container {
+  width: 225px;
+}
+
+.banner-area .swiper-button-next {
+  z-index: 999999;
+}
+
+.banner-area .swiper-button-prev {
+  z-index: 999999;
 }
 
 .banner-text {
   position: absolute;
+  z-index: 99999;
   flex-direction: column;
   width: 100%;
-  top: 35%;
+  top: 32%;
   text-align: center;
 }
 
@@ -129,7 +155,7 @@
 }
 
 .services-area {
-  margin-bottom: 100px;
+  margin-bottom: 60px !important;
 }
 
 .services-header {
@@ -145,6 +171,7 @@
 .services-content {
   display: grid;
   grid-template-columns: 1fr 0.75fr;
+  margin-bottom: 70px !important;
 }
 
 .services-content-text {
@@ -155,6 +182,10 @@
 
 .services-content-buttons a:first-child {
   margin-right: 22px;
+}
+
+.services-cards {
+  margin-bottom: 55px;
 }
 
 .services-card {
@@ -184,43 +215,7 @@
   margin-right: 0px;
 }
 
-.contact-area #map {
-  position: absolute;
+.services-video video {
   width: 100%;
-  height: 550px;
-}
-
-.contact-form {
-  flex-direction: column;
-  position: relative;
-  top: 0;
-  right: 0;
-  width: 505px;
-  padding: 50px 40px;
-  background-color: #151614;
-}
-
-.contact-form-header {
-  font-weight: 400;
-  font-size: 25px;
-  line-height: 30px;
-  margin-bottom: 35px;
-}
-
-.contact-form-input {
-  background-color: #151614;
-}
-
-.contact-form-container {
-  display: grid;
-  grid-template-columns: 20% 70%;
-  -moz-column-gap: 10%;
-       column-gap: 10%;
-}
-
-.contact-form-button {
-  width: 100%;
-  color: #000;
-  background-color: #fff;
 }
 
