@@ -38,7 +38,7 @@
 
 :root {
   --swiper-navigation-top-offset: 97.7%;
-  --swiper-navigation-sides-offset: 40%;
+  --swiper-navigation-sides-offset: 42%;
   --swiper-pagination-bullet-size: 15px;
   --swiper-pagination-color: #FFF;
   --swiper-pagination-bullet-inactive-color: #FFF;
@@ -235,7 +235,7 @@
 
 @media (max-width: 1200px) {
   :root {
-    --swiper-navigation-sides-offset: 37%;
+    --swiper-navigation-sides-offset: 38%;
   }
 
   .advantages-area img {
@@ -254,12 +254,6 @@
   .advantages-text-blocks {
     justify-content: center;
     grid-template-columns: 50% 50%;
-  }
-}
-
-@media (max-width: 800px) {
-  :root {
-    --swiper-navigation-sides-offset: 35%;
   }
 }
 
