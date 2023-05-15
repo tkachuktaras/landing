@@ -102,3 +102,17 @@
   color: #707070;
 }
 
+@media (max-width: 1200px) {
+  :root {
+    --swiper-navigation-sides-offset: 37%;
+  }
+
+  .address-cards-svgs {
+    display: none;
+  }
+
+  .address-card {
+    margin-bottom: 30px;
+  }
+}
+

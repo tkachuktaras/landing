@@ -2,7 +2,7 @@
 
 :root {
     --swiper-navigation-top-offset: 97.7%;
-    --swiper-navigation-sides-offset: 43%;
+    --swiper-navigation-sides-offset: 40%;
 
     --swiper-pagination-bullet-size: 15px;
     --swiper-pagination-color: #FFF;
@@ -39,8 +39,6 @@
             }
 
             &-button {
-
-
                 &-next {
                     z-index: 999999;
                 }
@@ -197,3 +195,58 @@
     }
 }
 
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+    bottom: 8px!important;
+    top: var(--swiper-pagination-top,auto);
+}
+
+.swiper-button-next, .swiper-button-prev {
+    margin-top: -42px!important;
+    top: initial!important;
+}
+
+@media (max-width: 1200px){
+    :root{
+        --swiper-navigation-sides-offset: 37%;
+    }
+
+    .advantages {
+        &-area {
+            img {
+                display: none;
+            }
+        }
+
+        &-text {
+            width: 100%!important;
+
+            h2 {
+                display: flex;
+                justify-content: center;
+            }
+
+            &-blocks {
+                justify-content: center;
+                grid-template-columns: 50% 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    :root{
+        --swiper-navigation-sides-offset: 35%;
+    }
+}
+
+@media (max-width: 800px) {
+    :root{
+        --swiper-navigation-sides-offset: 35%;
+    }
+}
+
+@media (max-width: 600px) {
+    :root{
+        --swiper-navigation-sides-offset: 30%;
+    }
+}
