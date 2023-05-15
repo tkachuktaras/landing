@@ -4,7 +4,6 @@
 html, body {
     background-color: $bg-color;
     max-width: 100%;
-    overflow-x: hidden;
 }
 
 h1 {
@@ -183,11 +182,10 @@ h1 {
 .modal {
     align-items: center;
     text-align: center;
-    padding: 50px 100px;
+    padding: 100px 100px;
     position: fixed;
     z-index: 1;
     width: 60%;
-    height: 66%;
     background: #151614;
     top: 50%;
     left: -200%;

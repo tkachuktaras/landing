@@ -305,13 +305,13 @@
         setTimeout(function() {
             const element = document.querySelectorAll('.modal');
             element[0].classList.add('active');
-            document.getElementsByTagName("body")[0].style = "overflow-y: hidden;";
+            document.getElementsByTagName("body")[0].style = "overflow: hidden hidden!important;";
         }, 5000);
 
         function closeModal() {
             const element = document.querySelectorAll('.modal');
             element[0].classList.remove('active');
-            document.getElementsByTagName("body")[0].style = "overflow-y: auto;";
+            document.getElementsByTagName("body")[0].style = "overflow: hidden auto!important;";
         }
     </script>
 
